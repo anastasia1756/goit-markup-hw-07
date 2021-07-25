@@ -1,0 +1,51 @@
+.client-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+
+  margin-bottom: 50px;
+}
+
+.companies-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+
+  &-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.companies-link {
+  content: "";
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icons-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+
+  transition: border 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    content: "";
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    outline: none;
+  }
+}
