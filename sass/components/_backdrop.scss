@@ -10,8 +10,8 @@
   visibility: visible;
   pointer-events: auto;
 
-  transition: opacity 250ms var(--timing-function),
-    visibility 250ms var(--timing-function);
+  @include transition(opacity);
+  @include transition(visibility);
 }
 
 .is-hidden {

@@ -6,19 +6,19 @@
   letter-spacing: 0.03em;
   color: var(--secondary-icons-color);
 
-  .header__& {
-    margin-right: 90px;
-  }
-
-  .footer__& {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 20px;
-
-    color: var(--acent-text-color);
-  }
-
   &__accent {
     color: var(--accent-color);
   }
+}
+
+.header__logo {
+  margin-right: 90px;
+}
+
+.footer__logo {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 20px;
+
+  color: var(--acent-text-color);
 }

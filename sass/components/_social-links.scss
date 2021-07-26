@@ -1,22 +1,11 @@
-.social-links-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 32px;
-  margin-right: 32px;
-}
-
 .social-list {
-  display: flex;
+  @extend %align;
   justify-content: space-between;
-  align-items: center;
-}
-
-.social-list__team {
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 30px;
 }
+
 .social-link-list {
   width: 44px;
   height: 44px;
@@ -24,7 +13,6 @@
 }
 
 .social-links {
-  content: "";
   width: 100%;
   height: 100%;
   display: flex;
@@ -33,8 +21,8 @@
   border-radius: 50%;
   fill: var(--icons-color);
 
-  transition: background-color 250ms var(--timing-function),
-    fill 250ms var(--timing-function);
+  @include transition(background-color);
+  @include transition(fill);
 
   &:hover,
   &:focus {
@@ -48,17 +36,15 @@
 }
 
 .links-social {
-  content: "";
-  display: flex;
+  @extend %align;
   justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--acent-text-color);
 
-  transition: background-color 250ms var(--timing-function);
+  @include transition(background-color);
 
   &:hover,
   &:focus {
@@ -76,10 +62,8 @@
 }
 
 .footer-social-links {
-  content: "";
-  display: flex;
+  @extend %align;
   justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
 
